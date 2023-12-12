@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .sidebar li:first-child {
+    @apply border-l-2 border-cyan-600 px-3 py-4 font-semibold text-black hover:bg-gray-300;
+  }
+
+  .sidebar li:nth-last-child(2) {
+    @apply bg-gray-50 px-3 py-4 pl-6 text-sm text-gray-500 hover:bg-gray-300;
+  }
+
+  .sidebar li:last-child {
+    @apply bg-gray-50 px-3 py-4 pl-6 text-sm text-gray-500 hover:bg-gray-300;
+  }
+}
